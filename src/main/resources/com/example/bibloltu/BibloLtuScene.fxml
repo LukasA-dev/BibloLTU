@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="579.0" prefWidth="1083.0" style="-fx-background-color: #2E2828;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bibloltu.LogInScene">
+   <children>
+      <TextField fx:id="usernameField" layoutX="698.0" layoutY="249.0" prefHeight="41.0" prefWidth="220.0" promptText="Username" style="-fx-background-color: #503A3A; -fx-text-fill: white;" text="ludwig@sandberg.com" />
+      <Text fill="#b56f6f" layoutX="698.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+         <font>
+            <Font name="Palatino Linotype" size="20.0" />
+         </font></Text>
+      <PasswordField fx:id="passwordField" layoutX="698.0" layoutY="333.0" prefHeight="41.0" prefWidth="220.0" promptText="Password" style="-fx-background-color: #503A3A; -fx-text-fill: white;" text="123" />
+      <Text fill="#b56f6f" layoutX="698.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+         <font>
+            <Font name="Palatino Linotype" size="20.0" />
+         </font></Text>
+      <Text fill="#b56f6f" layoutX="743.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log in">
+         <font>
+            <Font name="Palatino Linotype" size="48.0" />
+         </font>
+      </Text>
+      <Button fx:id="logInButton" layoutX="698.0" layoutY="442.0" mnemonicParsing="false" onAction="#handleLogInButtonAction" prefHeight="41.0" prefWidth="104.0" style="-fx-background-color: #503A3A; -fx-background-radius: 40;" text="Log in " textFill="#efe9e4">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Palatino Linotype" size="20.0" />
+         </font></Button>
+      <Pane prefHeight="579.0" prefWidth="572.0" style="-fx-background-color: #503A3A;">
+         <children>
+            <Text fx:id="bibloLtuLogo" fill="WHITE" layoutX="116.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BibloLTU" wrappingWidth="302.0">
+               <font>
+                  <Font name="Palatino Linotype" size="70.0" />
+               </font>
+            </Text>
+            <TextField fx:id="newUserNameField" disable="true" layoutX="99.0" layoutY="170.0" opacity="0.0" prefHeight="41.0" prefWidth="313.0" promptText="Name" style="-fx-background-color: #2E2828; -fx-text-fill: #ffffff;" />
+            <Text fx:id="newUserNameText" fill="#b56f6f" layoutX="99.0" layoutY="154.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+               <font>
+                  <Font name="Palatino Linotype" size="20.0" />
+               </font>
+            </Text>
+            <PasswordField fx:id="newUserPasswordField" disable="true" layoutX="99.0" layoutY="336.0" opacity="0.0" prefHeight="41.0" prefWidth="313.0" promptText="Password" style="-fx-background-color: #2E2828; -fx-text-fill: white;" />
+            <Text fx:id="newUserPasswordText" fill="#b56f6f" layoutX="99.0" layoutY="324.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+               <font>
+                  <Font name="Palatino Linotype" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="newUserEmailField" disable="true" layoutX="99.0" layoutY="256.0" opacity="0.0" prefHeight="41.0" prefWidth="313.0" promptText="Email" style="-fx-background-color: #2E2828; -fx-text-fill: white;" />
+            <Text fx:id="newUserEmailText" fill="#b56f6f" layoutX="97.0" layoutY="239.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+               <font>
+                  <Font name="Palatino Linotype" size="20.0" />
+               </font>
+            </Text>
+            <Button fx:id="createUserButton" disable="true" layoutX="163.0" layoutY="459.0" mnemonicParsing="false" onAction="#handleCreateUserButtonAction" opacity="0.0" prefHeight="57.0" prefWidth="185.0" style="-fx-background-color: #EFE9E4; -fx-background-radius: 40;" text="Create user" textFill="#5e5343">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Palatino Linotype" size="20.0" />
+               </font>
+            </Button>
+            <Text fx:id="datePickerText" fill="#b56f6f" layoutX="99.0" layoutY="398.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date of Birth">
+               <font>
+                  <Font name="Palatino Linotype" size="20.0" />
+               </font>
+            </Text>
+            <DatePicker fx:id="datePickerField" disable="true" layoutX="101.0" layoutY="407.0" opacity="0.0" prefHeight="41.0" prefWidth="313.0" style="-fx-background-color: #2E2828;" />
+         </children></Pane>
+      <Button fx:id="guestUserButton" layoutX="808.0" layoutY="442.0" mnemonicParsing="false" onAction="#guestButtonAction" prefHeight="41.0" prefWidth="104.0" style="-fx-background-color: #503A3A; -fx-background-radius: 40;" text="Guest" textFill="#efe9e4">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Palatino Linotype" size="20.0" />
+         </font>
+      </Button>
+      <Button id="loginCreateAccountButton" fx:id="logInButton11" layoutX="719.0" layoutY="505.0" mnemonicParsing="false" onAction="#showCreateUser" prefHeight="40.0" prefWidth="167.0" style="-fx-background-color: #b56f6f; -fx-background-radius: 40;" text="Create account" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Palatino Linotype" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

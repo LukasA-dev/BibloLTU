@@ -1,0 +1,43 @@
+# Compiled bytecode and Maven build directory
+/target/
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+!.mvn/wrapper/maven-wrapper.jar
+
+# IntelliJ IDEA specific files
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Eclipse specific files
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+
+# NetBeans specific files
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# VS Code specific files
+.vscode/
+
+# macOS system files
+.DS_Store
+
+# Logs and backup files
+/logs/
+*.log
+*~
+*.bak
